@@ -1,0 +1,75 @@
+[class*="col-"] {
+    float: left;
+}
+
+.col-1 {
+    width: 65%;
+}
+
+.col-2 {
+    width: 25%;
+}
+
+.about-me {
+    float: left;
+}
+
+.contact {
+    float: right;
+}
+
+.container {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.collapse {
+    padding: 20px;
+}
+
+.collapse-btn {
+    float: right;
+}
+
+.brand {
+    background-color: darkgray;
+    border-radius: 5px;
+    padding: 2%;
+}
+
+.col-icons {
+    column-count: 3;
+    width: 100%;
+}
+
+.navbar {
+    display: none;
+}
+
+.navbar-contents {
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    padding: 2%;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+    .col-icons {
+        text-align: center;
+    }
+    .title {
+        text-align: center;
+    }
+    .text {
+        text-align: justify;
+    }
+}
