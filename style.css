@@ -44,7 +44,7 @@
 
 .card_content {
     padding: 1rem;
-    background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+    background: linear-gradient(to bottom left, rgb(33, 37, 41) 25%, rgb(33, 37, 41) 100%);
 }
 
 .cards_item {
@@ -101,34 +101,28 @@
 }
 
 .btn {
-    color: #ffffff;
+    color: #8f8f8f;
     text-decoration: none;
-    padding: 10px;
+    padding: 1px;
     border: 1px solid black;
     border-radius: 0.25rem;
-    height: 40px;
+    height: 35px;
     width: 87px;
 }
 
 .btn:hover {
-    opacity: 0.8;
+    color: #ffffff;
+    background: orange;
 }
 
 .buttons {
     padding: 2px;
 }
 
-.cv {
-
-    background: #fb4343;
-}
-
-.github {
-    background: #6e5494;
-}
-
+.cv,
+.github,
 .email {
-    background: #009e87;
+    background: transparent;
 }
 
 .col-icons {
@@ -162,6 +156,10 @@
 .navbar-contents {
     background-color: rgb(33, 37, 41);
     padding: 10px;
+}
+
+.projects {
+    background-color: #f1f1f1;
 }
 
 .projects-title {
