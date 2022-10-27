@@ -107,34 +107,46 @@
             </p>
             <img src="./static/graduation.JPG" height=500></img>
         </section>
-        <div id="my-projects"></div>
+
+        <h1 class="">Projects</h1>
+
+        <ul class="cards" id="my-projects"></ul>
+
+
     </main>
 
     <script>
         var projects = {
             Calculator: {
                 name: 'Apple Calculator',
-                summary: 'meep',
-                image:'./static/apple-calc.png',
+                summary: "This web application is a mock version of Apple's iOS Calculator application",
+                image: './static/apple-calc.png',
             },
             MapSearch: {
                 name: 'Map Search',
-                summary: 'meep',
-                image:'./static/map-search-test.png',
+                summary: 'This project allows a user to search for a location from a given set of data and marks that destination on a google map. It utilizes Google Maps Javascript API to pin the latitude and longitude',
+                image: './static/map-search-test.png',
             },
             MWList: {
                 name: 'Media Watch List',
-                summary: 'meep',
-                image:'./static/mw-list.png',
+                summary: 'This web application allows users to add, remove, favorite and mark a movie as watched.',
+                image: './static/mw-list.png',
             }
         }
 
         const projectsHtml = Object.keys(projects).reduce((accum, currKey) => accum +
-            `<div class="project-card col-4">
-                <img class="project-image" src="${projects[currKey].image}"></img>
-                <h4 class="project-title"><b>${projects[currKey].name}</b></h4>
-                <p class="project-summary">${projects[currKey].summary}</p>
-            </div>`, '');
+            `<li class="cards_item">
+                <div class="card">
+                    <div>
+                        <img class="card_image" src="${projects[currKey].image}"></img>
+                    </div>
+                    <div class="card_content">
+                        <h4 class="card_title"><b>${projects[currKey].name}</b></h4>
+                        <p class="card_summary">${projects[currKey].summary}</p>
+                    </div>
+                    
+                </div>
+            </li>`, '');
 
         document.getElementById('my-projects').innerHTML = projectsHtml;
 
