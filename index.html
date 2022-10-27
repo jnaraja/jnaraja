@@ -29,7 +29,7 @@
                     <h4 class="title">Contact</h4>
 
                     <div class="col-icons">
-                        <div>
+                        <div class="icon">
                             <a href="https://twitter.com/J2naraja">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="orange"
                                     class="bi bi-twitter" viewBox="0 0 16 16">
@@ -38,7 +38,7 @@
                                 </svg>
                             </a>
                         </div>
-                        <div>
+                        <div class="icon">
                             <a href="https://www.linkedin.com/in/jnaraja/">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="orange"
                                     class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -47,7 +47,7 @@
                                 </svg>
                             </a>
                         </div>
-                        <div>
+                        <div class="icon">
                             <a href="mailto:j2naraja@gmail.com">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="orange"
                                     class="bi bi-envelope" viewBox="0 0 16 16">
@@ -107,9 +107,37 @@
             </p>
             <img src="./static/graduation.JPG" height=500></img>
         </section>
+        <div id="my-projects"></div>
     </main>
 
     <script>
+        var projects = {
+            Calculator: {
+                name: 'Apple Calculator',
+                summary: 'meep',
+                image:'./static/apple-calc.png',
+            },
+            MapSearch: {
+                name: 'Map Search',
+                summary: 'meep',
+                image:'./static/map-search-test.png',
+            },
+            MWList: {
+                name: 'Media Watch List',
+                summary: 'meep',
+                image:'./static/mw-list.png',
+            }
+        }
+
+        const projectsHtml = Object.keys(projects).reduce((accum, currKey) => accum +
+            `<div class="project-card col-4">
+                <img class="project-image" src="${projects[currKey].image}"></img>
+                <h4 class="project-title"><b>${projects[currKey].name}</b></h4>
+                <p class="project-summary">${projects[currKey].summary}</p>
+            </div>`, '');
+
+        document.getElementById('my-projects').innerHTML = projectsHtml;
+
         function collapse() {
             var x = document.getElementById("navbarHeader");
             if (x.style.display === "inline-block") {
