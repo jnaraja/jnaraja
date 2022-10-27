@@ -39,8 +39,25 @@
 }
 
 .btn {
+    color: #e0e0e0;
+    text-decoration: none;
     padding: 10px;
     border-radius: 10px;
+    display: inline-block;
+    width: 88px;
+}
+
+.cv {
+    
+    background: #ff1f1f;
+}
+
+.github {
+    background: #6e5494;
+}
+
+.email {
+    background: #009e87;
 }
 
 .col-icons {
