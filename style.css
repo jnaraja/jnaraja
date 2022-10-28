@@ -216,14 +216,6 @@
 }
 
 .top {
-    --offset: 120px;
-
-    position: sticky;
-    bottom: 20px;
-    margin-left: 90%;
-    place-self: end;
-    margin-top: calc(100vh + var(--offset));
-
     /* visual styling */
     text-decoration: none;
     padding: 5px;
@@ -231,7 +223,6 @@
     color: #fff;
     background: orange;
     border-radius: .25rem;
-    white-space: nowrap;
 }
 
 body {
@@ -249,19 +240,9 @@ main {
     font-weight: 400;
 }
 
-@media (min-width: 0rem) {
-    .top {
-        margin: auto;
-    }
-}
-
 @media (min-width: 40rem) {
     .cards_item {
         width: 50%;
-    }
-    
-    .top {
-        margin-left: 85%;
     }
 }
 
@@ -294,9 +275,5 @@ main {
 @media (min-width: 56rem) {
     .cards_item {
         width: 33.3333%;
-    }
-
-    .top {
-        margin-left: 90%;
     }
 }
