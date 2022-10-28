@@ -28,10 +28,17 @@
 .card {
     background-color: white;
     border-radius: 0.25rem;
-    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    box-shadow: 35px 20px 40px -14px rgba(0, 0, 0, 0.55);
     display: flex;
     flex-direction: column;
     overflow: hidden;
+}
+
+.card-btn {
+    color: #8f8f8f;
+    text-decoration: none;
+    border: 1px solid black;
+    height: 30px;
 }
 
 .cards {
@@ -54,6 +61,14 @@
 
 .card_image {
     width: 100%;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.card-link:hover {
+    opacity: 0.9;
 }
 
 .card_title {
@@ -111,6 +126,7 @@
     width: 87px;
 }
 
+.card-btn:hover,
 .btn:hover {
     color: #ffffff;
     background: orange;
