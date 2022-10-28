@@ -85,7 +85,7 @@
             <h1 class="projects-title">Jonathan Naraja</h1>
             <p class="text-muted">Junior Web Developer</p>
             <div class="buttons">
-                <button href="./static/Jonathan_Naraja_Resume.pdf" download="Jonathan_Naraja_Resume.pdf" class="btn cv">
+                <button class="btn cv" onclick="invoke('./static/Jonathan_Naraja_Resume.pdf')">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-file-person-fill" viewBox="0 0 16 16">
                         <path
@@ -93,7 +93,7 @@
                     </svg>
                     CV
                 </button>
-                <button href="https://github.com/jnaraja" class="btn github">
+                <button class="btn github" onclick="invoke('https://github.com/jnaraja')">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-github" viewBox="0 0 16 16">
                         <path
@@ -101,7 +101,7 @@
                     </svg>
                     GitHub
                 </button>
-                <button href="mailto:j2naraja@gmail.com" class="btn email">
+                <button class="btn email" onclick="invoke('mailto:j2naraja@gmail.com')">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-send" viewBox="0 0 16 16">
                         <path
@@ -122,10 +122,10 @@
 
     <footer class="text-muted py-5">
         <div class="container">
+            <p class="mb-1">Copyright &copy;2022 Jonathan Naraja</p>
             <p class="float-end mb-1">
                 <a href="">Back to top</a>
             </p>
-            <p class="mb-1">Copyright &copy;2022 Jonathan Naraja</p>
         </div>
     </footer>
 
@@ -172,6 +172,10 @@
             } else {
                 x.style.display = "flex";
             }
+        }
+
+        function invoke(url) {
+            window.open(url, "_blank");
         }
     </script>
 </body>

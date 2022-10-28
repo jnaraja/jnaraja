@@ -117,7 +117,7 @@
 }
 
 .buttons {
-    padding: 2px;
+    padding: 10px;
 }
 
 .cv,
@@ -220,7 +220,8 @@ main {
     .col-icons {
         text-align: center;
     }
-
+    .mb-1,
+    .float-end,
     .title {
         text-align: center;
     }
