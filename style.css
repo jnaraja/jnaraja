@@ -215,6 +215,29 @@
     color: #6c757d;
 }
 
+.top {
+    --offset: 120px;
+
+    position: sticky;
+    bottom: 20px;
+    margin-left: 90%;
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+
+    /* visual styling */
+    text-decoration: none;
+    padding: 5px;
+    font-family: monospace;
+    color: #fff;
+    background: orange;
+    border-radius: .25rem;
+    white-space: nowrap;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
 h4 {
     font-size: 1.5rem;
 }
@@ -226,7 +249,23 @@ main {
     font-weight: 400;
 }
 
-@media only screen and (max-width: 768px) {
+@media (min-width: 0rem) {
+    .top {
+        margin: auto;
+    }
+}
+
+@media (min-width: 40rem) {
+    .cards_item {
+        width: 50%;
+    }
+    
+    .top {
+        margin-left: 85%;
+    }
+}
+
+@media only screen and (max-width: 48rem) {
 
     /* For mobile phones: */
     [class*="col-"] {
@@ -252,14 +291,12 @@ main {
     }
 }
 
-@media (min-width: 40rem) {
-    .cards_item {
-        width: 50%;
-    }
-}
-
 @media (min-width: 56rem) {
     .cards_item {
         width: 33.3333%;
+    }
+
+    .top {
+        margin-left: 90%;
     }
 }
