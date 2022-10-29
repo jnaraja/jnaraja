@@ -219,7 +219,6 @@
     /* visual styling */
     text-decoration: none;
     padding: 5px;
-    font-family: GT-America,sans-serif;
     color: #fff;
     background: orange;
     border-radius: .25rem;
@@ -227,6 +226,7 @@
 
 body {
     scroll-behavior: smooth;
+    font-family: GT-America, sans-serif;
 }
 
 h4 {
@@ -236,7 +236,6 @@ h4 {
 footer,
 header,
 main {
-    font-family: GT-America, sans-serif;
     font-style: normal;
     font-weight: 400;
 }
