@@ -179,8 +179,12 @@
     margin: 5px 2px;
 }
 
-.follow-icon svg:hover {
+.follow-icon svg{
     fill: rgb(33, 37, 41);
+}
+
+.follow-icon svg:hover {
+    fill: orange;
 }
 
 .py-lg-5 {
