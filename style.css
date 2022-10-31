@@ -21,6 +21,10 @@
     width: 25%;
 }
 
+.copyright {
+    text-align: left;
+}
+
 .about-me {
     float: left;
 }
@@ -166,16 +170,17 @@
 }
 
 .follow {
-    column-count: 4;
     text-align: center;
+    max-width: 1000px;
 }
 
 .follow-icon {
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    background-color: rgb(33, 37, 41);
-    border-radius: 60px;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.follow-icon svg:hover {
+    fill: rgb(33, 37, 41);
 }
 
 .py-lg-5 {
@@ -233,13 +238,22 @@
     text-decoration: none;
     padding: 5px;
     color: #fff;
-    background: orange;
+    background: rgb(33, 37, 41);
     border-radius: .25rem;
+}
+
+.top:hover {
+    opacity: 0.7;
+    background: orange;
 }
 
 body {
     scroll-behavior: smooth;
     font-family: GT-America, sans-serif;
+}
+
+h3 {
+    text-align: center;
 }
 
 h4 {
@@ -270,7 +284,7 @@ main {
         text-align: center;
     }
 
-    .mb-1,
+    .copyright,
     .float-end,
     .title {
         text-align: center;
