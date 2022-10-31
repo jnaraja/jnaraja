@@ -72,7 +72,7 @@
 }
 
 .card-link:hover {
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .card_title {
@@ -130,7 +130,6 @@
     width: 87px;
 }
 
-.card-btn:hover,
 .btn:hover {
     color: #ffffff;
     background: orange;
@@ -247,7 +246,6 @@
 }
 
 .top:hover {
-    opacity: 0.7;
     background: orange;
 }
 
