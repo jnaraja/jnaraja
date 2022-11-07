@@ -110,6 +110,10 @@
     float: right;
 }
 
+.collapse-btn:hover {
+    color: orange;
+}
+
 .container {
     max-width: 1300px;
     margin: auto;
@@ -162,6 +166,10 @@
 .col-md-8 {
     flex: 0 0 auto;
     width: 66.66666667%;
+}
+
+.float-start {
+    float: left !important;
 }
 
 .float-end {
@@ -273,6 +281,10 @@ main {
     .cards_item {
         width: 50%;
     }
+
+    .follow {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 48rem) {
@@ -287,8 +299,8 @@ main {
     }
 
     .copyright,
-    .float-end,
     .title {
+        float: none;
         text-align: center;
     }
 
